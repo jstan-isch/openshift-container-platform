@@ -659,12 +659,12 @@
           - git
           - azure-cli
           #- python27-python-pip
-          - atomic-openshift-excluder
-          - atomic-openshift-docker-excluder
+          #- atomic-openshift-excluder
+          #- atomic-openshift-docker-excluder
         state: present
 
-    - name: Excluders for OpenShift
-      shell: atomic-openshift-excluder unexclude
+    #- name: Excluders for OpenShift
+      #shell: atomic-openshift-excluder unexclude
 
     - name: Installing OpenShift utilities
       yum: 
